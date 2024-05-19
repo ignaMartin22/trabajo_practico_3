@@ -10,24 +10,24 @@
 	<header id="header">
 		<h1>FORMULARIO PARA CLIENTES</h1>
 	</header>
+	<main class="main">
+	<h3 class="titulo-form">Registro de clientes</h3>	
 	
-	<h3>Registro de clientes</h3>	
-	
-	<form>
-		<label for="name"></label>Nombre: </label>
-		<input type="text" id="name" name="name" required>
+	<form id="formulario">
+		<label for="name">Nombre: </label>
+		<input type="text" id="name" name="name" class="control" required>
 		<br>
-		<br>
+
 		 <label for="surname">Apellido: </label>
-		<input type="text" id="surname" name="surname" required>
-		<br>
+		<input type="text" id="surname" name="surname" class="control" required>
+
 		<br>
 		<label for="dni">DNI: </label>
-		<input type="number" id="dni" name="dni" required>
-		<br>
+		<input type="number" id="dni" name="dni" class="control" required>
+
 		<br>
 		<label for="bday">Fecha de nacimiento:  </label>
-		<input type="date" id="bday" name="bday" required>
+		<input type="date" id="bday" name="bday" required  class="control">
 		<br>
 		<h4>Ingrese Género:</h4>
 		<input type="radio"  id="gender" name="gender"> Masculino
@@ -35,14 +35,14 @@
 		<input type="radio" id="gender"  name="gender"> X
 		<br>
 		<label for="mail">Email: </label>
-		<input type="email" id="mail" name="mail" required>
+		<input type="email" id="mail" name="mail" class="control" required>
 		<br>
 		<label for="house">Domicilio: </label>
-		<input type="text" id="house" name="house" required>
+		<input type="text" id="house" name="house" required class="control">
 		<br>
 		
 		<label for="opcion">Provincia:</label>
-		<select id="opcion" name="opcion" required>
+		<select id="opcion" name="opcion" class="control" required>
 		  <option value="jujuy">Jujuy</option>
 		  <option value="salta">Salta</option>
 		  <option value="tucuman">Tucumán</option>
@@ -51,12 +51,14 @@
 		</select>
 		<br>
 		<label for="telefone-number">Número de teléfono: </label>
-		<input type="number" name="telefone-number">
+		<input type="number" name="telefone-number" class="control">
 		<br>
 		
+		<label>Seleccione áreas de interés:</label>
+		<br>
 		<label for="HTML">HTML</label>
 		<input type="checkbox" name="HTML">		
-	     <label for="CSS">CSS</label>		
+	    <label for="CSS">CSS</label>		
 		<input type="checkbox" name="CSS">	
 		<label for="bootstrap">Bootstrap</label>	
 		<input type="checkbox" name="bootstrap">
@@ -70,7 +72,7 @@
 		<br>
 		
 		<label for="password">Ingrese su contraseña: </label>
-		<input type="password" name="password" required>
+		<input type="password" name="password" required class="control">
 		<br>
 		
 		<label for="terms">Acepto los términos y condiciones</label>
@@ -80,8 +82,8 @@
 		<input type="checkbox" name="info" required>		
 	</form>
 	
-	
-	<footer>
+	</main>
+	<footer id="pie-form">
 		<p>@unju - Jujuy - Argentina - 2024</p>
 	</footer>
 </body>
